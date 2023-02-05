@@ -53,7 +53,13 @@
     "import/order": [
       "error",
       {
-        "groups": ["builtin", "external"],
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          ["sibling", "parent"],
+          "object"
+        ],
         "pathGroups": [
           {
             "pattern": "@/**",
@@ -62,7 +68,8 @@
           }
         ],
         "alphabetize": {
-          "order": "asc"
+          "order": "asc",
+          "caseInsensitive": true
         },
         "newlines-between": "always"
       }
