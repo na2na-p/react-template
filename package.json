@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "test": "yarn vitest",
     "preview": "vite preview",
     "lint": "eslint --ext .js,.ts,.tsx \"./src/**/*.{js,ts,tsx}\""
   },
